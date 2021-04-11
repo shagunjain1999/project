@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>sound of music</title>
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: rgb(148, 214, 132);
+            height: 1555px;
+
+
+        }
+
+        h1 {
+            border: 3px solid black;
+            color: whitesmoke;
+            background-color: rgb(5, 87, 53);
+            text-align: center;
+            height: 60px;
+            padding: 20px;
+            justify-content: center;
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            font-size: 44px;
+        }
+
+        h4 {
+
+            position: relative;
+            top: 1150px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 65px;
+            color: rgb(195, 255, 0);
+            text-decoration: underline;
+
+        }
+
+        h3 {
+
+            position: absolute;
+            top: 250px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 35px;
+            color: rgb(2, 31, 17);
+        }
+
+        img {
+            border: 3px solid rgb(50, 8, 204);
+            position: absolute;
+            right: 10%;
+            top: 70%;
+            height: 500px;
+            width: 500px;
+
+        }
+
+        .mission {
+
+            position: absolute;
+            top: 400px;
+            left: 60px;
+            width: 50%;
+            height: 50%;
+            font-size: 33px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(241, 153, 10);
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+            color: rgb(12, 11, 11);
+        }
+
+
+        .popup {
+            position: relative;
+            left: 92px;
+            display: inline-block;
+            cursor: pointer;
+            /* -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; */
+            text-align: center;
+            text-decoration: none;
+            color: rgb(34, 104, 255);
+            font-size: 20px;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 560px;
+            height: 300px;
+            background-color: rgb(55, 102, 233);
+            color: rgb(224, 228, 26);
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            font-size: 30px;
+            list-style: none;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(121, 12, 39) transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center;
+              */
+        }
+
+        .card {
+            justify-content: center;
+            border: 3px solid rgb(0, 10, 6);
+            height: 400px;
+            width: 400px;
+            margin: 30px;
+            position: relative;
+            top: 1200px;
+            left: 10px;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>..SOUND OF MUSIC..</h1>
+    <h3>"Music is the wine that fills the cup of silence.” </h3>
+    <div class="mission">
+        <h2><u>Our Mission</u></h2>
+        <p>Mission is to create, provide and expand positively life-changing experiences through music for all. We
+            believe that music and arts education is a core to students' education and must be available to all
+            students. Music for All is an advocate for music and arts education.
+        </p>
+        <h2><u>Vision</u></h2>
+        <p>We will use our resources to provide national programs that recognize and support music students' performance
+            and success, offer music educator training and professional development, and deliver tools and resources to
+            participants and their communities that will assist them in supporting music education by promoting
+            awareness of music’s impact on student growth and achievemen.</p>
+    </div>
+    <img src=dj.jpg
+         alt="sound of music"
+         width="400"
+         height="400">
+    <h4>Mentor's List</h4>
+    <div class="container">
+        <div class="card"
+             id="card-1">
+            <h2>Priyanka Singh</h2>
+            <p>"There’s no denying that it takes a lot of personal motivation and dedication to succeed in meeting one’s
+                musical goals. "</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup-1">
+                    <li>Name-Priyanka Singh</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Helping set goals.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-2">
+            <h2>Saarthak Kumar</h2>
+            <p>" A mentor will likely have valuable advice for how to work to make the most of your practice time."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup-2">
+                    <li>Name-Saarthak kumar</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Identifying strengths and weaknesses.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-3">
+            <h2>Ashu Aggarwal</h2>
+            <p> A good mentor will encourage you to keep pushing onward and pursuing your dreams."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup-3">
+                    <li>Name-Ashu Aggarwal</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Providing honest feedback.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-4">
+            <h2>Twinle Jain</h2>
+            <p>A great mentor can help you make significant strides in your musical path, whether you’re pursuing music
+                as a hobby or a career."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup-4">
+                    <li>Name-Twinkle Jain</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Pushing them to keep going when they feel like giving up.</li>
+                    <li> You recently had a gig and in your eyes (and perhaps everyone else’s), it went terribly. The
+                        sound wasn’t right, your instrument wasn’t tuned properly or you broke a string, or the crowd
+                        just wasn’t into your music. Often, musicians hit a roadblock in their career or development or
+                        experience moments of significant self-doubt. </li>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

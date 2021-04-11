@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Career Mentorship</title>
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: rgb(197, 66, 248);
+            height: 1555px;
+
+
+        }
+
+        h1 {
+            border: 3px solid black;
+            color: whitesmoke;
+            background-color: rgb(184, 214, 50);
+            text-align: center;
+            height: 60px;
+            padding: 20px;
+            justify-content: center;
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            font-size: 44px;
+        }
+        h4{
+            
+            position: relative;
+            top: 1150px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 65px;
+            color: rgb(245, 203, 13);
+            text-decoration: underline;
+
+        }
+
+        h3 {
+
+            position: absolute;
+            top: 250px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 35px;
+            color: rgb(230, 243, 50);
+        }
+
+        img {
+            border: 3px solid rgb(50, 93, 233);
+            position: absolute;
+            right: 10%;
+            top: 80%;
+
+        }
+
+        .mission {
+
+            position: absolute;
+            top: 400px;
+            left: 60px;
+            width: 50%;
+            height: 50%;
+            font-size: 33px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(13, 255, 126);
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: rgb(221, 251, 49);
+        }
+
+        .popup {
+            position: relative;
+            left: 92px;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(0, 68, 255);
+            font-size: 20px;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 560px;
+            height: 300px;
+            background-color: rgb(55, 206, 233);
+            color: rgb(224, 228, 26);
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            font-size: 30px;
+            list-style: none;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(236, 20, 20) transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+     
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center;
+              */
+        }
+
+        .card {
+            justify-content: center;
+            border: 3px solid rgb(255, 123, 0);
+            height:400px;
+            width:400px;
+            margin: 30px;
+            position: relative;
+            top: 1200px;
+            left:10px;
+          
+        }
+
+     
+    </style>
+</head>
+
+
+<body>
+    <h1>..CHESS LESSONS..</h1>
+    <h3>"The blunders are all there on the board, waiting to be made".</h3>
+    <div class="mission">
+        <h2><u>Our Mission</u></h2>
+        <p>Our Mission is to provide a unique platform to individuals for chase their goals with the help of active
+            mentoring from our leading mentors. We bring together Industry leaders and experts to share their vast Life
+            experience and wisdom to the mentee’s. Our objective is to assist people overcome their fear of failure,
+            conquer hesitation, survive in the face of competition and cover up the skills gap in a sustainable fashion.
+        </p>
+        <h2><u> Vision</u></h2>
+        <p>Our vision is “To Provide a Mentor to all seeking Knowledge and Growth” and we seek to develop the most
+            innovative mentoring platform and inspire moments of success through active mentorship.</p>
+    </div>
+    <img src=ch.jpg
+         alt="chess lessons"
+         width="400"
+         height="400">
+    <h4>Mentor's List</h4>
+    <div class="container">
+        <div class="card"
+             id="card-1">
+            <h2>Pooja</h2>
+            <p>"The ability to play chess is the sign of a gentleman. The ability to play chess well is a sign of a wasted life."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-2">
+            <h2>Sahil Yadav</h2>
+            <p>"The beauty of chess is it can be whatever you want it to be. ."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-3">
+            <h2>Rohan Verma</h2>
+            <p>"Avoid the crowd. Do your own thinking independently. Be the chess player, not the chess piece."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-4">
+            <h2>Alka Tomar</h2>
+            <p>"Chess is a war over the board. The object is to crush the opponent’s mind."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Career Mentorship</title>
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: rgb(228, 171, 96);
+            height: 1555px;
+
+
+        }
+
+        h1 {
+            border: 3px solid black;
+            color: whitesmoke;
+            background-color: rgb(214, 129, 50);
+            text-align: center;
+            height: 60px;
+            padding: 20px;
+            justify-content: center;
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            font-size: 44px;
+        }
+        h4{
+            
+            position: relative;
+            top: 1150px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 65px;
+            color: rgb(245, 13, 44);
+            text-decoration: underline;
+
+        }
+
+        h3 {
+
+            position: absolute;
+            top: 250px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 35px;
+            color: rgb(98, 60, 26);
+        }
+
+        img {
+            border: 3px solid rgb(204, 47, 8);
+            position: absolute;
+            right: 10%;
+            top: 80%;
+
+        }
+
+        .mission {
+
+            position: absolute;
+            top: 400px;
+            left: 60px;
+            width: 50%;
+            height: 50%;
+            font-size: 33px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(144, 11, 122);
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: rgb(107, 53, 2);
+        }
+
+        .popup {
+            position: relative;
+            left: 92px;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(0, 68, 255);
+            font-size: 20px;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 560px;
+            height: 300px;
+            background-color: rgb(55, 206, 233);
+            color: rgb(224, 228, 26);
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            font-size: 30px;
+            list-style: none;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(236, 20, 20) transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+     
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center;
+              */
+        }
+
+        .card {
+            justify-content: center;
+            border: 3px solid yellow;
+            height:400px;
+            width:400px;
+            margin: 30px;
+            position: relative;
+            top: 1200px;
+            left:10px;
+          
+        }
+
+     
+    </style>
+</head>
+
+
+<body>
+    <h1>..CAREER MENTORSHIP..</h1>
+    <h3>There are two ways to succeed in life.
+        Learn by making mistakes or Learn with Mentor.</h3>
+    <div class="mission">
+        <h2><u>Our Mission</u></h2>
+        <p>Our Mission is to provide a unique platform to individuals for chase their goals with the help of active
+            mentoring from our leading mentors. We bring together Industry leaders and experts to share their vast Life
+            experience and wisdom to the mentee’s. Our objective is to assist people overcome their fear of failure,
+            conquer hesitation, survive in the face of competition and cover up the skills gap in a sustainable fashion.
+        </p>
+        <h2><u> Vision</u></h2>
+        <p>Our vision is “To Provide a Mentor to all seeking Knowledge and Growth” and we seek to develop the most
+            innovative mentoring platform and inspire moments of success through active mentorship.</p>
+    </div>
+    <img src=mission.jpg
+         alt="sucess"
+         width="400"
+         height="400">
+    <h4>Mentor's List</h4>
+    <div class="container">
+        <div class="card"
+             id="card-1">
+            <h2>Prachi Verma</h2>
+            <p>"If you want to get a good guidence for your career,then come under her mentorship happily."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-2">
+            <h2>Shagun Jain</h2>
+            <p>"A good mentor can change your life by helping you take right decision, if you want good guidence then come under her happily."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-3">
+            <h2>Kriti Jain</h2>
+            <p>"A happy person is that who can complete and live their dream happily. so to complete dream happily come under her."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-4">
+            <h2>Manasvi Saharan</h2>
+            <p>"A well focused person make sure to complete dream in the way he/she want. To fullfil life with focus come under her."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

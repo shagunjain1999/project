@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Career Mentorship</title>
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: rgb(79, 183, 224);
+            height: 1555px;
+
+
+        }
+
+        h1 {
+            border: 3px solid black;
+            color: whitesmoke;
+            background-color: rgb(19, 113, 156);
+            text-align: center;
+            height: 60px;
+            padding: 20px;
+            justify-content: center;
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            font-size: 44px;
+        }
+        h4{
+            
+            position: relative;
+            top: 1150px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 65px;
+            color: yellow;
+            text-decoration: underline;
+
+        }
+
+        h3 {
+
+            position: absolute;
+            top: 250px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 35px;
+            color:rgb(10, 14, 251);
+        }
+
+        img {
+            border: 3px solid rgb(50, 8, 204);
+            position: absolute;
+            right: 10%;
+            top: 70%;
+            height: 500px;
+            width: 500px;
+
+        }
+
+        .mission {
+
+            position: absolute;
+            top: 400px;
+            left: 60px;
+            width: 50%;
+            height: 50%;
+            font-size: 33px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(7, 251, 218);
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+            color: rgb(12, 11, 11);
+        }
+        
+
+        .popup {
+            position: relative;
+            left: 92px;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(0, 68, 255);
+            font-size: 20px;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 560px;
+            height: 300px;
+            background-color: rgb(55, 102, 233);
+            color: rgb(224, 228, 26);
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            font-size: 30px;
+            list-style: none;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(121, 12, 39) transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+     
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center;
+              */
+        }
+
+        .card {
+            justify-content: center;
+            border: 3px solid rgb(4, 0, 255);
+            height:400px;
+            width:400px;
+            margin: 30px;
+            position: relative;
+            top: 1200px;
+            left:10px;
+          
+        }
+
+     
+    </style>
+</head>
+
+
+<body>
+    <h1>..DESIGN THINKING..</h1>
+    <h3>"Design Thinking is a mindset,not a toolkit or seies of step."</h3>
+    <div class="mission">
+        <h2><u>Our Mission</u></h2>
+        <p>Design thinking is a deeply human process that taps into abilities we all have but get over-looked by more conventional problem-solving practices. Design thinking requires an experimental, collaborative, and optimistic mindset. We define mindset as the ideas and attitudes with which a person approaches a situation.
+        </p>
+        <h2><u> Points to remember</u></h2>
+        <p><li>Be a facilitator and mediator.</li>
+            <li>Challenge and trust your team.</li>
+           <li> Plan for uncertainty.</li>
+            <li>Stimulate learning and exploration</li>.</p>
+    </div>
+    <img src=mentorship.jpg
+         alt="design thinking"
+         width="400"
+         height="400">
+    <h4>Mentor's List</h4>
+    <div class="container">
+        <div class="card"
+             id="card-1">
+            <h2>Shreya Saxena</h2>
+            <p>"Good thinking can help us to make our future more relaxful and happy. We together learn how to do this. "</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-2">
+            <h2>Shubham Jain</h2>
+            <p>"Design Thinking help us to design our future in a succesful way. Let desin our future together."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-3">
+            <h2>Arihant Jain</h2>
+            <p>"A very good way to impress others is by designing it help us to make other understand our thinking easily."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-4">
+            <h2>Mansi Jain</h2>
+            <p>"A unique thing required unique way of starting. We together can create a unique thinking by designing in unique way."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Career Mentorship</title>
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: rgb(228, 96, 147);
+            height: 1555px;
+
+
+        }
+
+        h1 {
+            border: 3px solid black;
+            color: whitesmoke;
+            background-color: rgb(51, 238, 222);
+            text-align: center;
+            height: 60px;
+            padding: 20px;
+            justify-content: center;
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            font-size: 44px;
+        }
+        h4{
+            
+            position: relative;
+            top: 1150px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 65px;
+            color: rgb(13, 226, 245);
+            text-decoration: underline;
+
+        }
+
+        h3 {
+
+            position: absolute;
+            top: 250px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 35px;
+            color: rgb(23, 10, 136);
+        }
+
+        img {
+            border: 3px solid rgb(2, 56, 119);
+            position: absolute;
+            right: 10%;
+            top: 80%;
+
+        }
+
+        .mission {
+
+            position: absolute;
+            top: 400px;
+            left: 60px;
+            width: 50%;
+            height: 50%;
+            font-size: 33px;
+        }
+
+        h2 {
+            text-align: center;
+            color:rgb(51, 238, 222);
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: rgb(6, 4, 119);
+        }
+
+        .popup {
+            position: relative;
+            left: 92px;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(0, 68, 255);
+            font-size: 20px;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 560px;
+            height: 300px;
+            background-color: rgb(55, 206, 233);
+            color: rgb(224, 228, 26);
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            font-size: 30px;
+            list-style: none;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(236, 20, 20) transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+     
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center;
+              */
+        }
+
+        .card {
+            justify-content: center;
+            border: 3px solid rgb(17, 16, 102);
+            height:400px;
+            width:400px;
+            margin: 30px;
+            position: relative;
+            top: 1200px;
+            left:10px;
+          
+        }
+
+     
+    </style>
+</head>
+
+
+<body>
+    <h1>..PESRSONAL HYGIENE..</h1>
+    <h3>"Self care is must, as it helps us in making life beautiful."</h3>
+    <div class="mission">
+        <h2><u>Our Mission</u></h2>
+        <p>Our hygienic paper products enhance quality of life and transform small moments into pleasant memories. We offer comprehensive solutions to everyone who is a part of the Paloma story, and work with them to create opportunities for our mutual and sustainable development. Proudly since 1873.
+        </p>
+        <h2><u> Vision</u></h2>
+        <p>Our vision is a leading and innovative supplier and manufacturer of high-quality hygienic paper products for everyday use in the Adriatic region, central Europe and beyond..</p>
+    </div>
+    <img src=ph.jpg
+         alt="personal hygiene"
+         width="400"
+         height="400">
+    <h4>Mentor's List</h4>
+    <div class="container">
+        <div class="card"
+             id="card-1">
+            <h2>Sakshi</h2>
+            <p>"Three things in life – your health, your mission, and the people you love. That’s it."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-2">
+            <h2>Roohi</h2>
+            <p>"Take care of your body ,it's the only place you live in."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor f.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-3">
+            <h2>Krish</h2>
+            <p>"A fit body, a calm mind, a house full of love. These things cannot be bought – they must be earned."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+        <div class="card"
+             id="card-4">
+            <h2>Raj</h2>
+            <p>"Happiness is the highest form of health."</p>
+            <div class="popup"
+                 onclick="myFunction()">To get details..
+                <span class="popuptext"
+                      id="myPopup">
+                    <li>Name-Prachi Verma</li>
+                    <li>Contact-xxxxx55555</li>
+                    <li>Role-Mentor for Career in a very well way.Has very good knowledge.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
